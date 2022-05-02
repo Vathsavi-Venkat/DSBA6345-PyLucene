@@ -12,3 +12,8 @@ The steps to install, setup and test successfull installation of Lucene can be f
 The steps to setup VS Code for this project can be found here: [Instructions]()
 
 ## Steps to run the project
+1. To run the index file on the terminal, type the command:
+    ```bash
+    python /home/Lucene/IndexFiles.py /home/Data
+    ```
+2. 
