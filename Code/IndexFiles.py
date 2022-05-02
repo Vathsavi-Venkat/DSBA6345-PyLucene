@@ -61,7 +61,6 @@ class IndexFiles(object):
                 try:
                     path = os.path.join(root, filename)
                     file = open(path, "r", encoding="ISO-8859-1")
-                    #contents = unicode(file.read(), 'iso-8859-1')
                     contents = file.read()
                     file.close()
                     doc = Document()
@@ -70,7 +69,7 @@ class IndexFiles(object):
                     if len(contents) > 0:
                         doc.add(Field("contents", contents, t2))
                     else:
-                        print ("warning: no content in %s" % filename)
+                        print ("WARNING: No content in %s" % filename)
                     writer.addDocument(doc)
                 except Exception as e:
                     print ("Failed in indexDocs:", e)
@@ -80,7 +79,7 @@ if __name__ == '__main__':
         print (IndexFiles.__doc__)
         sys.exit(1)
     lucene.initVM(vmargs=['-Djava.awt.headless=true'])
-    print ('lucene', lucene.VERSION)
+    print ('Lucene', lucene.VERSION)
     start = datetime.now()
     try:
         base_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
