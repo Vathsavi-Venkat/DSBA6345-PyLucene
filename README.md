@@ -11,4 +11,4 @@ The steps to install, setup and test successfull installation of Lucene can be f
 ## Setup VS Code to run the project
 The steps to setup VS Code for this project can be found here: [Instructions]()
 
-##Steps to run the project
+## Steps to run the project
