@@ -16,4 +16,31 @@ The steps to setup VS Code for this project can be found here: [Instructions]()
     ```bash
     python /home/Lucene/IndexFiles.py /home/Data
     ```
-2. 
+   Once the index has been created, you should see "done" and the time it took to create the index.
+2. Next, we can try searching on the indexes. On the terminal, type the command:
+   ```bash
+    python /home/Lucene/SearchFiles.py
+    ```
+    We can use single word query, "multi word query", and logical operators (AND, OR, NOT) while searching.
+ 
+ 
+3. To run the new index file on the terminal, type the command:
+    ```bash
+    python /home/Lucene/FieldIndex.py /home/DataNews
+    ```
+   Once the index has been created, you should see "done" and the time it took to create the index.
+4. Next, we can try searching on the new set of indexes. On the terminal, type the command:
+   ```bash
+    python /home/Lucene/FieldSearch.py
+    ```
+    Similarly, we can use single word query, "multi word query", and logical operators (AND, OR, NOT) while searching.
+    Since, we created index based on fields as well, we can index on the fields as well. For example,
+    ```bash
+    from_:"Amanda"
+    ```
+    ```bash
+    subj:"Cryptography"
+    ```
+    ```bash
+    doc_id:"12345"
+    ```
