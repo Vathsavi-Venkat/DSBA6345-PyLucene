@@ -9,9 +9,10 @@ This project is part of the Modern Data Science Systems (DSBA 6345) course from 
 The steps to install, setup and test successfull installation of Lucene can be found here: [Instructions](https://github.com/Vathsavi-Venkat/DSBA6345-PyLucene/blob/main/Instructions/Install%20and%20set%20up%20PyLucene%20using%20Docker.pdf)
 
 ## Setup VS Code to run the project
-The steps to setup VS Code for this project can be found here: [Instructions]()
+The steps to setup VS Code for this project can be found here: [Instructions](https://github.com/Vathsavi-Venkat/DSBA6345-PyLucene/blob/main/Instructions/Setup%20Steps.pdf)
 
-## Steps to run the project
+## Steps to execute the project
+The following are the steps to execute the project. The steps can also be found here: [Instructions](https://github.com/Vathsavi-Venkat/DSBA6345-PyLucene/blob/main/Instructions/Project%20Run%20Steps.pdf)
 1. To run the index file on the terminal, type the command:
     ```bash
     python /home/Lucene/IndexFiles.py /home/Data
@@ -33,14 +34,17 @@ The steps to setup VS Code for this project can be found here: [Instructions]()
    ```bash
     python /home/Lucene/FieldSearch.py
     ```
-    Similarly, we can use single word query, "multi word query", and logical operators (AND, OR, NOT) while searching.
+    Similarly, we can use single word query, "multi word query", and logical operators (AND, OR, NOT) while searching. Some examples of the query types can be found here: [Query Types](https://github.com/Vathsavi-Venkat/DSBA6345-PyLucene/blob/main/Instructions/Query%20Types%20Examples.pdf)
     Since, we created index based on fields as well, we can index on the fields as well. For example,
-    ```bash
-    from_:"Amanda"
-    ```
-    ```bash
-    subj:"Cryptography"
-    ```
-    ```bash
-    doc_id:"12345"
-    ```
+    a) From field:
+        ```bash
+        from_:"Amanda"
+        ```
+    b) Subject field:
+       ```bash
+        subj:"Cryptography"
+        ```
+    c) Document ID:
+        ```bash
+        doc_id:"12345"
+        ```
