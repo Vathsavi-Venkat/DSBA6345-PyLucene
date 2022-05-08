@@ -36,14 +36,17 @@ The following are the steps to execute the project. The steps can also be found 
     ```
     Similarly, we can use single word query, "multi word query", and logical operators (AND, OR, NOT) while searching. Some examples of the query types can be found here: [Query Types](https://github.com/Vathsavi-Venkat/DSBA6345-PyLucene/blob/main/Instructions/Query%20Types%20Examples.pdf)
     Since, we created index based on fields as well, we can index on the fields as well. For example,
+    
     a) From field:
         ```bash
         from_:"Amanda"
         ```
+    
     b) Subject field:
        ```bash
         subj:"Cryptography"
         ```
+    
     c) Document ID:
         ```bash
         doc_id:"12345"
