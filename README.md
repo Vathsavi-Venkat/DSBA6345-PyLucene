@@ -38,16 +38,16 @@ The following are the steps to execute the project. The steps can also be found 
     Since, we created index based on fields as well, we can index on the fields as well. For example,
     
     a) From field:
-        ```bash
-        from_:"Amanda"
-        ```
+```bash
+from_:"Amanda"
+```
     
     b) Subject field:
-       ```bash
-        subj:"Cryptography"
-        ```
+```bash
+subj:"Cryptography"
+```
     
     c) Document ID:
-        ```bash
-        doc_id:"12345"
-        ```
+```bash
+doc_id:"12345"
+```
